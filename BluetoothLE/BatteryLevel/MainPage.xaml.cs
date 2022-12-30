@@ -28,7 +28,6 @@ public partial class MainPage : ContentPage
 
 			if (service != null)
 			{
-
 				Debug.WriteLine("Getting Battery Level Characteristic...");
 				characteristic = await service.GetCharacteristicAsync(BluetoothUuid.GetCharacteristic("battery_level"));
 
@@ -51,4 +50,3 @@ public partial class MainPage : ContentPage
         Debug.WriteLine($"Battery Level has changed to {e.Value[0]} %");
     }
 }
-
