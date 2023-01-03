@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LegoController.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Hello, World!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Welcome to .NET Multi-platform App UI"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="ConnectBtn"
+                Text="Connect"
+                SemanticProperties.Hint="Connects to a hub device"
+                Clicked="OnConnectClicked"
+                HorizontalOptions="Center" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Grid.ColumnSpan="4" Grid.Row="0" x:Name="PortName" HorizontalTextAlignment="Center"/>
+                <Label Grid.Column="0" Grid.Row="1" x:Name="MinLabel" HorizontalTextAlignment="Start"/>
+                <Label Grid.Column="1" Grid.Row="1" x:Name="MidLabel" HorizontalTextAlignment="Center"/>
+                <Label Grid.Column="2" Grid.Row="1" x:Name="MaxLabel" HorizontalTextAlignment="End"/>
+                <Slider Grid.Row="2" Grid.ColumnSpan="3" x:Name="Motor"  ValueChanged="Motor_ValueChanged" />
+            </Grid>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
