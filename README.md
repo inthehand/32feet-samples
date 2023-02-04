@@ -1,5 +1,5 @@
 # 32feet-samples
-Sample projects using [32feet.NET](https://github.com/inthehand/32feet/)
+Sample projects using [32feet.NET](https://github.com/inthehand/32feet/). Please only raise issues in this repository if they relate to sample code - for everything else use the [32feet.NET](https://github.com/inthehand/32feet/) repository.
 
 ## Bluetooth Classic
 
