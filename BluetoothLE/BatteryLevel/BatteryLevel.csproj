@@ -49,9 +49,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Reference Include="InTheHand.BluetoothLE">
-	    <HintPath>..\..\..\32feet\InTheHand.BluetoothLE\bin\Debug\net6.0-windows10.0.19041.0\InTheHand.BluetoothLE.dll</HintPath>
-	  </Reference>
+	  <PackageReference Include="InTheHand.BluetoothLE" Version="4.0.34" />
 	</ItemGroup>
 
 </Project>
